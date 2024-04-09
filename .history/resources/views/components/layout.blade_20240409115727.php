@@ -16,8 +16,8 @@
 </head>
 
 <body class="">
-    @session('success')
-    <div class="success-message">{{ session('success') }}</div>
+    @session('message')
+    <div class="succcess-message">{{ session('message') }}</div>
     @endsession
     {{ $slot }}
 </body>

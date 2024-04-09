@@ -52,7 +52,7 @@ class NoteController extends Controller
      */
     public function edit(Note $note)
     {
-        return view('note.edit', ['note' => $note]);
+        return view('note.edit');
     }
 
     /**
@@ -75,7 +75,6 @@ class NoteController extends Controller
      */
     public function destroy(Note $note)
     {
-        $note->delete();
-        return to_route('note.index', $note)->with('success', 'Note was deleted');
+        //
     }
 }
